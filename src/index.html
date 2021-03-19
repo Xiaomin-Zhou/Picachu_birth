@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style id="style"></style>
+    <div id="html"></div>
+    <div id="buttons">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnNormal">中速</button>
+        <button id="btnFast">快速</button>
+    </div>
+    <div class="demo">
+        <div class="skin">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose">
+                <div class="triangle"></div>
+                <div class="sector"></div>
+            </div>
+            <div class="face left"></div>
+            <div class="face right"></div>
+            <div class="mouth">
+                    <div class="upperLip left"></div>
+                    <div class="upperLip right"></div>
+                    <div class="lowerLip">
+                        <div class="tongue"></div>
+                    </div>                
+            </div>
+            <audio src="Pika.mp3" id="sound" preload="" hidden=""></audio>
+
+            <div class="hand left" style="opacity: 0;">
+                <img src="images/hand-left.png">
+                <img class="flash left" src="images/flash.gif">
+            </div>
+            <div class="hand right" style="opacity: 0;">
+                <img src="images/hand-right.png">
+                <img class="flash right" src="images/flash.gif">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="main.js"></script>
+    <script src="sound.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::before{ 
+    box-sizing: border-box;
+}
+*::after{
+    box-sizing: border-box;
+}
+#html{
+    /* 文字太长会造成横向滚动条，下面代码为的是自动换行 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 45vw;
+    height: 100vh;
+    border: 1px solid black;
+    overflow-y: auto;
+}
+#html::-webkit-scrollbar{
+    display: none;
+    
+}
+.demo{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 55vw;
+    height: 100vh;
+}
+#buttons{
+    position: fixed;
+    left: calc(45vw - 60px);
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 10px;
+    
+}
+#buttons > button{
+    margin-bottom: 10px;
+    padding: 4px 8px;
+    background-color: #ffcb00;
+}
